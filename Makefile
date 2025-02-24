@@ -11,7 +11,7 @@ LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+etherwake
 
 define Build/Prepare
-	chmod +x root/etc/init.d/timewol root/usr/bin/* >/dev/null 2>&1
+	chmod +x root/etc/init.d/timewol >/dev/null 2>&1
 endef
 
 include ../../luci.mk
